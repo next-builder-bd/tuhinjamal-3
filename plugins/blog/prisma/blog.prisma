@@ -1,0 +1,8 @@
+model BlogPost {
+  id        Int      @id @default(autoincrement())
+  title     String
+  slug      String  @unique
+  content   String  @db.Text
+  published Boolean @default(false)
+  createdAt DateTime @default(now())
+}

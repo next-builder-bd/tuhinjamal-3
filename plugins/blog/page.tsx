@@ -1,0 +1,24 @@
+const BlogListPage = async () => {
+//   const posts = await BlogService.getPublicPosts();
+
+  return (
+    <main style={{ padding: 24 }}>
+      <h1>Blog</h1>
+
+      {/* {posts.length === 0 && <p>No posts yet.</p>}
+
+      <ul>
+        {posts.map(post => (
+          <li key={post.id}>
+            <a href={`/blog/${post.slug}`}>
+              {post.title}
+            </a>
+          </li>
+        ))}
+      </ul> */}
+      <h1>Thisi is blog page</h1>
+    </main>
+  );
+};
+
+export default BlogListPage;

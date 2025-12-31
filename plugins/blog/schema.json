@@ -1,0 +1,16 @@
+{
+  "models": [
+    {
+      "name": "BlogPost",
+      "fields": [
+        "id Int @id @default(autoincrement())",
+        "title String",
+        "slug String @unique",
+        "content String @db.Text",
+        "categories BlogCategory[]",
+        "published Boolean @default(false)",
+        "createdAt DateTime @default(now())"
+      ]
+    }
+  ]
+}
